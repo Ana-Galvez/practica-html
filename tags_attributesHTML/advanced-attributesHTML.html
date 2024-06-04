@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="advanced-attributesHTML.css">
+  <title>Diferentes atributos o tags</title>
+</head>
+
+<body>
+  <main>
+    <!-- popover: abre un modal o popup -->
+    <article id="popover">
+      <button popovertarget="open">Abre el modal</button>
+      <p popover id="open">Soy el modal</p>
+    </article>
+
+    <!-- details: crea una especie de diccionario. Algo parecido a las listas de definición  -->
+    <article>
+      <details>
+        <summary>HTML</summary>
+        <p><strong>Lenguaje de marcado</strong> utilizado en la creación de páginas web.</p>
+        <summary>CSS</summary>
+        <p>Lenguaje que maneja el diseño y presentación de las páginas web</p>
+        <summary>Javascript</summary>
+        <p><strong>Lenguaje de programación</strong> que los desarrolladores utilizan para hacer páginas web
+          interactivas, aunque también se puede usar en backend</p>
+      </details>
+    </article>
+
+    <!-- meter y progress: crean barras de progreso, meter teniendo un valor que sirve como indicador y progress como barra propiamente dicha de progreso -->
+    <article>
+      <label for="">Nota de alumno:</label>
+      <meter value="7" min="0" max="10" optimum="7">7</meter>
+      <br>
+      <label for="">Disco rígido</label>
+      <progress max="100" value="18">18%</progress>
+    </article>
+
+    <!-- datalist: es como un select que muestra el valor en un input y permite búsqueda-->
+    <article>
+      <h2>Select común</h2>
+      <select>
+        <optgroup label="Lenguajes">
+          <option value="html">html</option>
+          <option value="css">css</option>
+          <option value="js">js</option>
+        </optgroup>
+        <optgroup label="frameworks">
+        <optgroup label="css">
+          <option value="Bootstrap">Bootstrap</option>
+          <option value="Tailwind">Tailwind</option>
+        </optgroup>
+        <optgroup label="js">
+          <option value="React">React(librería)</option>
+          <option value="Angular">Angular</option>
+          <option value="Vue">Vue</option>
+          <option value="Svelt">Svelt</option>
+        </optgroup>
+        </optgroup>
+      </select>
+      <h2>Datalist</h2>
+      <input type="text" list="lenguajes">
+      <datalist id="lenguajes">
+        <optgroup label="lenguajes">
+          <option value="html"></option>
+          <option value="css"></option>
+          <option value="js"></option>
+        </optgroup>
+        <optgroup label="frameworks">
+        <optgroup label="css">
+          <option value="bootstrap"></option>
+          <option value="tailwind"></option>
+        </optgroup>
+        </optgroup>
+      </datalist>
+    </article>
+
+    <!-- Picture: permite poner diferentes imágenes según el tamaño de pantalla -->
+    <figure>
+      <picture>
+        <source media="(min-width: 1000px)" srcset="img/table4.png">
+        <source media="(min-width: 600px)" srcset="img/table5.png">
+        <img src="img/table6.png" alt="tabla 6">
+      </picture>
+    </figure>
+  </main>
+</body>
+
+</html>

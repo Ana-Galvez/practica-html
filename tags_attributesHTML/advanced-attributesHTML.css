@@ -1,0 +1,27 @@
+article{
+  margin-bottom: 30px;
+}
+
+#popover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button{
+  width: 20%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+#open{
+  font-size: 4rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border:2px #dd22aa solid;
+  border-radius: 15px;
+  background-color: transparent;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
